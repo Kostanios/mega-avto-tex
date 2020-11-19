@@ -1,15 +1,19 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
+import Header from '../components/Header/index';
+
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500&display=swap" rel="stylesheet"/>
       </Head>
-
-      <main className={styles.main}>
+      <Header/>
+      {/* <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Nextjs!</a>
         </h1>
@@ -59,7 +63,7 @@ export default function Home() {
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
-      </footer>
+      </footer> */}
     </div>
   )
 }
